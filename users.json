@@ -1,0 +1,17 @@
+[
+    {
+        "email": "Piero@email.pi",
+        "imageUrl": "https://bootday/img/Content/avatar/avatar1.png",
+        "jobTitle": "Doctor",
+        "name": "Piero Angela",
+        "phone": "0000000"
+    },
+
+    {
+        "email": "Alberto@email.pi",
+        "imageUrl": "https://bootday/img/Content/avatar/avatar2.png",
+        "jobTitle": "Teacher",
+        "name": "Alberto Angela",
+        "phone": "1111111"
+    }
+]
