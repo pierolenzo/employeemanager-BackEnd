@@ -3,6 +3,8 @@ package it.pierolenzo.employeemanager.service;
 import java.util.List;
 import java.util.UUID;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,6 +13,7 @@ import it.pierolenzo.employeemanager.model.Employee;
 import it.pierolenzo.employeemanager.repo.EmployeeRepo;
 
 @Service
+@Transactional
 public class EmployeeService {
 	private final EmployeeRepo employeeRepo;
 
@@ -36,7 +39,7 @@ public class EmployeeService {
 		return employeeRepo.findEmployeeById(id)
 				.orElseThrow(() -> new UserNotFoundException("User by id " + id + "was not found"));
 	}
-
+  
 	public void deleteEmployee(Long id) {
 		employeeRepo.deleteEmployeeById(id);
 	}
